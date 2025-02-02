@@ -1,0 +1,351 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #010408;
+    padding: 15px 20px;
+}
+
+.logo {
+    color: rgb(239, 233, 233);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    padding: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(245, 237, 237);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    background: rgb(154, 165, 174);
+    height: 3px;
+    width: 25px;
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background:#212529;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
+}
+
+/* Custom CSS for the Slider */
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-indicators li {
+    background-color: #07104e;
+}
+
+.carousel-container {
+    margin-top: 30px;
+}
+
+.h5 {
+    color: black;
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    margin: 20px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.flip-card-front {
+    background-color: #f8f9fa;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #010407;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+.footer {
+    background: #343a40;
+    color: white;
+    padding: 40px 0;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #f8d210;
+}
+.social-icons a {
+    margin: 0 10px;
+    font-size: 20px;
+}
+.footer-bottom {
+    background: #212529;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #010408;
+    padding: 15px 20px;
+}
+
+.logo {
+    color: rgb(239, 233, 233);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    padding: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(245, 237, 237);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    background: rgb(154, 165, 174);
+    height: 3px;
+    width: 25px;
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background:#212529;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
+}
+
+/* Custom CSS for the Slider */
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-indicators li {
+    background-color: #07104e;
+}
+
+.carousel-container {
+    margin-top: 30px;
+}
+
+.h5 {
+    color: black;
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    margin: 20px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.flip-card-front {
+    background-color: #f8f9fa;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #010407;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+.footer {
+    background: #343a40;
+    color: white;
+    padding: 40px 0;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #f8d210;
+}
+.social-icons a {
+    margin: 0 10px;
+    font-size: 20px;
+}
+.footer-bottom {
+    background: #212529;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
